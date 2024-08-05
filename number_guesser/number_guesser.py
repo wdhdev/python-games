@@ -28,17 +28,7 @@ while True:
             else:
                 print(error_message)
 
-    mode = get_input("Which mode do you want to play? (easy/medium/hard/custom)", ["easy", "medium", "hard", "custom", "1", "2", "3", "4"])
-
-    modes = {
-        "1": "easy",
-        "2": "medium",
-        "3": "hard",
-        "4": "custom"
-    }
-
-    if mode in ["1", "2", "3", "4"]:
-        mode = modes[mode]
+    mode = get_input("Which mode do you want to play? (easy/medium/hard/custom)", ["easy", "medium", "hard", "custom"])
 
     hints = get_input("Do you want hints to be enabled? (yes/no)", ["yes", "no", "y", "n"])
 
